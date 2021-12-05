@@ -24,13 +24,8 @@ do    -> faca
 while -> enquanto
 <br/>
 function -> funcao
-<<<<<<< HEAD
-<br/>
-=======
->>>>>>> 7e0e2b8835ab0b3ae3b749db5bea1c90d7348e0e
 <br/>
 <br/>
-
 Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
 <br/>
 <br/>
