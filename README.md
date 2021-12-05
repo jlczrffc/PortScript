@@ -32,3 +32,5 @@ Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
 Example:
 <br/>
 <code>test~$ node rascunhoPortScript.js prog.prts</code>
+<br/>
+*prog.prts is a PortScript test file...
