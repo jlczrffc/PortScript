@@ -1,9 +1,7 @@
 # PortScript*
+### *Nodejs with fs required
 <br/>
 Portuguese script interpreter for educational purpose...
-<br/>
-<br/>
-* Nodejs with fs required
 <br/>
 <br/>
 Reserved words available:
@@ -29,4 +27,6 @@ while -> enquanto
 Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
 <br/>
 <br/>
-Example:  test~$ node rascunhoPortScript.js prog.prts 
+Example:
+<br/>
+<code>test~$ node rascunhoPortScript.js prog.prts</code>
