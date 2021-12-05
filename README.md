@@ -19,11 +19,15 @@ true  -> verdadeiro
 <br/>
 false -> falso
 <br/>
-do    -> faça
+do    -> faca
 <br/>
 while -> enquanto
 <br/>
 <br/>
+function -> funcao
+<br/>
+<br/>
+
 Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
 <br/>
 <br/>
