@@ -31,6 +31,6 @@ Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
 <br/>
 Example:
 <br/>
-<code>test~$ node rascunhoPortScript.js prog.prts</code>
+<code>test~$ node rascunhoPortScript.js prog.prts</code>[^1]
 <br/>
-*prog.prts is a PortScript test file...
+[^1]prog.prts is a PortScript test file...
