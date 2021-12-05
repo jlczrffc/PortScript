@@ -1,5 +1,5 @@
 # PortScript*
-### *Nodejs with fs required
+### *Node.js&copy; with fs required
 <br/>
 Portuguese script interpreter for educational purpose...
 <br/>
