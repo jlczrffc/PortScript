@@ -8,7 +8,6 @@ fs.readFile(archive, 'utf-8', function(err, data){
 	let result = ''
 	let partial = ''
 	let seek = 0
-	let line = 1
 	try{
 		commands = data.split(/\n?\s/)
 		commands.forEach(function(command){
@@ -65,18 +64,23 @@ fs.readFile(archive, 'utf-8', function(err, data){
 						command = partial
 						result = result + 'while'
 					}  
-				}else if (command.match(/\b(faça)\b/i)){
-					partial = command.substring(0,command.indexOf('faça'))
-					partial = partial + command.substring(command.indexOf('faça')+4,command.length)
+				}else if (command.match(/\b(faca)\b/i)){
+					partial = command.substring(0,command.indexOf('faca'))
+					partial = partial + command.substring(command.indexOf('faca')+4,command.length)
 					command = partial
 					result = result + 'do'  
+				}else if (command.match(/\b(funcao)\b/i)){
+					partial = command.substring(0,command.indexOf('funcao'))
+					partial = partial + command.substring(command.indexOf('funcao')+6,command.length)
+					command = partial
+					result = result + 'function '  
 				}else if (command.match(/([0-9]+)/)){
 					result = result + command
 					command = ''  
 				}else if (command.match(/([a-z]+)/)){
 					result = result + command + ' '
 					command = ''  
-				}else if (command.match(/[;'"+-{}()*&#@%]/)){
+				}else if (command.match(/[/'"+-{}()*&#@%]/)){
 					result = result + command
 					command = '' 
 				}else if (command.match(/\s/)){
@@ -113,6 +117,3 @@ fs.readFile(archive, 'utf-8', function(err, data){
 		console.log("Erro: " + e)
 	}
 })
-
-
-

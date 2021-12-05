@@ -11,7 +11,7 @@ enquanto(x<10){
 	x++;
 };
 permita z=0;
-faça{
+faca{
 	imprima('HAHAHA'+z);
 	z++;
 }enquanto(z<10);
@@ -29,3 +29,7 @@ imprima(ccc);
 if(hhh === 'teste'){
 	imprima('funciona com variaveis!');
 };
+funcao ttxx(mmm){
+	imprima(mmm);
+};
+ttxx('vai garoto');	
