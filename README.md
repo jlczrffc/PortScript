@@ -23,7 +23,6 @@ do    -> faca
 <br/>
 while -> enquanto
 <br/>
-<br/>
 function -> funcao
 <br/>
 <br/>
