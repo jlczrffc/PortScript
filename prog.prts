@@ -1,0 +1,31 @@
+var hhh = 'teste';
+permita a = 'AB';
+permita i = 0;
+permita zzz = verdadeiro;
+para(i=0;i<10;i++){
+	imprima(a+i);
+};
+permita x=0;
+enquanto(x<10){
+	imprima('KK'+x);
+	x++;
+};
+permita z=0;
+faça{
+	imprima('HAHAHA'+z);
+	z++;
+}enquanto(z<10);
+imprima(22222);
+imprima('fununcia mai meno...');
+constante w='mai meno, mioH agora';
+imprima(w);
+imprima(zzz);
+imprima(!zzz);
+se(zzz === verdadeiro){
+	imprima('Funcionou?:',zzz);
+};
+permita ccc = [1,2,3,4,5];
+imprima(ccc);
+if(hhh === 'teste'){
+	imprima('funciona com variaveis!');
+};
