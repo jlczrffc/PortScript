@@ -29,4 +29,4 @@ while -> enquanto
 Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
 <br/>
 <br/>
-Example: node rascunhoPortScript.js prog.prts 
+Example:  test~$ node rascunhoPortScript.js prog.prts 
