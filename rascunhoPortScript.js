@@ -41,7 +41,6 @@ fs.readFile(archive, 'utf-8', function(err, data){
 					partial = command.substring(0,command.indexOf('verdadeiro'))
 					partial = partial + 'true' + command.substring(command.indexOf('verdadeiro')+10,command.length)
 					command = partial
-					console.log('#############################' + command +'#######################')
 				} if (command.match(/\b(falso)\b/i)){
 					partial = command.substring(0,command.indexOf('falso'))
 					partial = partial + 'false' + command.substring(command.indexOf('falso')+5,command.length)
