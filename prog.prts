@@ -1,7 +1,7 @@
 var hhh = 'teste';
 permita a = 'AB';
 permita i = 0;
-permita zzz = verdadeiro;
+permita zzz=verdadeiro;
 para(i=0;i<10;i++){
 	imprima(a+i);
 };
@@ -34,7 +34,7 @@ funcao ttxx(mmm){
 };
 ttxx('vai garoto');
 funcao executa(yyy){
-	retorne 'kkkkk '+yyy
+	retorne 'kkkkk '+yyy;
 };
 imprima(executa('vai garoto2'));
 imprima('vai garoto'.substring(0,3)); 
@@ -44,7 +44,7 @@ funcao numeroRegressivo(numero){
 	se(numero >0){
 		numeroRegressivo(numero);
 	}
-	retorne
+	retorne;
 };
 numeroRegressivo(5);
 constante expr = 'mamoes';
@@ -59,10 +59,14 @@ troque (expr) {
   predefina:
     imprima(`Desculpe, nao temos: ${expr}.`);
 };
-var vvv = true;
-if(vvv===true){
-	console.log('aceitos!')
+var vvv=verdadeiro;
+if(vvv===verdadeiro){
+	console.log('aceitos!');
 };
+
+arr=[1,2,3,4,5,6,7];
+
+arr.paraCada(r => imprima(r));
 
 
 
