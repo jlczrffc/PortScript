@@ -80,6 +80,26 @@ fs.readFile(archive, 'utf-8', function(err, data){
 					partial = partial + command.substring(command.indexOf('retorne')+7,command.length)
 					command = partial
 					result = result + 'return '  
+				}else if (command.match(/\b(troque)\b/i)){
+					partial = command.substring(0,command.indexOf('troque'))
+					partial = partial + command.substring(command.indexOf('troque')+6,command.length)
+					command = partial
+					result = result + 'switch'  
+				}else if (command.match(/\b(caso)\b/i)){
+					partial = command.substring(0,command.indexOf('caso'))
+					partial = partial + command.substring(command.indexOf('caso')+4,command.length)
+					command = partial
+					result = result + 'case'  
+				}else if (command.match(/\b(saia)\b/i)){
+					partial = command.substring(0,command.indexOf('saia'))
+					partial = partial + command.substring(command.indexOf('saia')+4,command.length)
+					command = partial
+					result = result + 'break'  
+				}else if (command.match(/\b(predefina)\b/i)){
+					partial = command.substring(0,command.indexOf('predefina'))
+					partial = partial + command.substring(command.indexOf('predefina')+9,command.length)
+					command = partial
+					result = result + 'default'  
 				}else if (command.match(/([0-9]+)/)){
 					result = result + command
 					command = ''  

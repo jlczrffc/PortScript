@@ -27,12 +27,22 @@ function -> funcao
 <br/>
 return -> retorne
 <br/>
+switch -> troque
+<br/>
+case -> caso
+<br/>
+default -> predefina
+<br/>
+break -> saia
+<br/>
 *All javascript reserved words, functions and properties are acepted...
 <br/>
 *Semicolon ';' at end of sentence is required...
 <br/>
+Supports recursion... 
 <br/>
-Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
+<br/>
+Use: node rascunhoPortScript.js [fileName.ext]
 <br/>
 Example:
 <br/>
@@ -45,13 +55,11 @@ To show interpreted code use -code option:
 <br/> 
 Use: node rascunhoPortScript.js [nomeDoArquivo.ext] -code
 <br/>
-<br/>
 Example:
 <br/>
 <code>test~$ node rascunhoPortScript.js prog.prts -code</code>
 <br/>
 <br/>
-  
 
 
 

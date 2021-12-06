@@ -47,6 +47,19 @@ funcao numeroRegressivo(numero){
 	retorne
 };
 numeroRegressivo(5);
+constante expr = 'mamoes';
+troque (expr) {
+  caso 'laranjas':
+    imprima('Laranjas são R$2.59 o Kilo.');
+    saia;
+  caso 'mangas':
+  caso 'mamoes':
+    imprima('Mangas e Mamoes são R$3.79 o Kilo.');
+    saia;
+  predefina:
+    imprima(`Desculpe, nao temos: ${expr}.`);
+}
+
 
 
 
