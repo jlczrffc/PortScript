@@ -1,6 +1,6 @@
 # PortScript*
-### *Node.js&copy; with fs required
-### *Node.js&copy; with fs necessário
+### *Node.js&copy; with fs is required
+### *É necessário Node.js&copy; com fs 
 
 <br/>
 Portuguese script interpreter to javascript for educational purpose...
@@ -27,21 +27,21 @@ false-> falso
 <br/>
 do-> faca
 <br/>
-while -> enquanto
+while-> enquanto
 <br/>
-function -> funcao
+function-> funcao
 <br/>
-return -> retorne
+return-> retorne
 <br/>
-switch -> troque
+switch-> troque
 <br/>
-case -> caso
+case-> caso
 <br/>
-default -> predefina
+default-> predefina
 <br/>
-break -> saia
+break-> saia
 <br/>
-.forEach -> .paraCada (Array function)
+.forEach-> .paraCada (Array function)
 <br/>
 *All javascript reserved words, functions and properties are accepted...
 <br/>
@@ -70,7 +70,7 @@ Exemplo:
 <br/>
 *prog.prts is a PortScript test file...
 <br/>
-*prog.prts é um arquivo de teste em PortScript
+*prog.prts é um arquivo de teste em PortScript...
 <br/>
 <br/>
 To show interpreted code use -code option:
