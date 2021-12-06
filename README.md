@@ -4,7 +4,7 @@
 Portuguese script interpreter for educational purpose...
 <br/>
 <br/>
-Translated Reserved words available:
+Translated reserved words available:
 <br/>
 <br/>
 for   -> para
@@ -35,7 +35,7 @@ default -> predefina
 <br/>
 break -> saia
 <br/>
-*All javascript reserved words, functions and properties are acepted...
+*All javascript reserved words, functions and properties are accepted...
 <br/>
 *Semicolon ';' at end of sentence is required...
 <br/>

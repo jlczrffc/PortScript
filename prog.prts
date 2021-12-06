@@ -58,9 +58,11 @@ troque (expr) {
     saia;
   predefina:
     imprima(`Desculpe, nao temos: ${expr}.`);
-}
-
-
+};
+var vvv = true;
+if(vvv===true){
+	console.log('aceitos!')
+};
 
 
 
