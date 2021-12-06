@@ -53,7 +53,7 @@ Example:
 <br/>
 To show interpreted code use -code option:
 <br/> 
-Use: node rascunhoPortScript.js [nomeDoArquivo.ext] -code
+Use: node rascunhoPortScript.js [fileName.ext] -code
 <br/>
 Example:
 <br/>
