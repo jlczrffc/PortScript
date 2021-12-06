@@ -74,6 +74,11 @@ fs.readFile(archive, 'utf-8', function(err, data){
 					partial = partial + command.substring(command.indexOf('funcao')+6,command.length)
 					command = partial
 					result = result + 'function '  
+				}else if (command.match(/\b(retorne)\b/i)){
+					partial = command.substring(0,command.indexOf('retorne'))
+					partial = partial + command.substring(command.indexOf('retorne')+7,command.length)
+					command = partial
+					result = result + 'return '  
 				}else if (command.match(/([0-9]+)/)){
 					result = result + command
 					command = ''  

@@ -32,4 +32,8 @@ if(hhh === 'teste'){
 funcao ttxx(mmm){
 	imprima(mmm);
 };
-ttxx('vai garoto');	
+ttxx('vai garoto');
+funcao executa(yyy){
+	retorne 'kkkkk '+yyy
+};
+imprima(executa('vai garoto2'));
