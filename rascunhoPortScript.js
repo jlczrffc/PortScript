@@ -120,7 +120,6 @@ fs.readFile(archive, 'utf-8', function(err, data){
 					result=result.substring(0,l) + ';\n' +result.substring(l+1,result.length)
 				}
 				if (letter === '}'){
-					console.log('******************* '+ l)
 					result=result.substring(0,l-1) + '\n' +result.substring(l,result.length)
 				}
 			}
