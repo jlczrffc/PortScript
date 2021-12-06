@@ -4,7 +4,7 @@
 Portuguese script interpreter for educational purpose...
 <br/>
 <br/>
-Reserved words available:
+Translated Reserved words available:
 <br/>
 <br/>
 for   -> para
@@ -25,12 +25,33 @@ while -> enquanto
 <br/>
 function -> funcao
 <br/>
+return -> retorne
+<br/>
+*All javascript reserved words, functions and properties are acepted...
+<br/>
+*Semicolon ';' at end of sentence is required...
+<br/>
 <br/>
 Use: node rascunhoPortScript.js [nomeDoArquivo.ext]
+<br/>
+Example:
+<br/>
+<code>test~$ node rascunhoPortScript.js prog.prts</code>
+<br/>
+*prog.prts is a PortScript test file...
+<br/>
+<br/>
+To show interpreted code use -code option:
+<br/> 
+Use: node rascunhoPortScript.js [nomeDoArquivo.ext] -code
 <br/>
 <br/>
 Example:
 <br/>
-<code>test~$ node rascunhoPortScript.js prog.prts*</code>
+<code>test~$ node rascunhoPortScript.js prog.prts -code</code>
 <br/>
-*prog.prts is a PortScript test file...
+<br/>
+  
+
+
+

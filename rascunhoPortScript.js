@@ -1,4 +1,5 @@
 let archive = process.argv[2]
+let option = process.argv[3]
 
 var fs = require('fs');
 
@@ -88,14 +89,9 @@ fs.readFile(archive, 'utf-8', function(err, data){
 				}else if (command.match(/[/'"+-{}()*&#@%]/)){
 					result = result + command
 					command = '' 
-				}else if (command.match(/\s/)){
-					command = ''
-					result = result + command 
-	
 				}
 			}
 		})
-		
 		for(let l = 0; l < result.length; l++){
 			let letter = result.substring(l,l+1)
 			if(result.substring(l,l+3) === 'for'){
@@ -115,8 +111,9 @@ fs.readFile(archive, 'utf-8', function(err, data){
 				result=result.substring(0,l) + ';\n' +result.substring(l+1,result.length)
 			}
 		}
-		
-		console.log(result)
+		if (option === '-code'){ 
+			console.log(result)
+		}
 		eval(result);
 	}catch(e){
 		console.log("Erro: " + e)

@@ -37,3 +37,21 @@ funcao executa(yyy){
 	retorne 'kkkkk '+yyy
 };
 imprima(executa('vai garoto2'));
+imprima('vai garoto'.substring(0,3)); 
+funcao numeroRegressivo(numero){
+	imprima(numero);
+	numero--;
+	se(numero >0){
+		numeroRegressivo(numero);
+	}
+	retorne
+};
+numeroRegressivo(5);
+
+
+
+
+
+
+
+
