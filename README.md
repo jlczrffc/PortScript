@@ -1,9 +1,8 @@
 # PortScript*
 ### *Node.js&copy; with fs is required
 ### *É necessário Node.js&copy; com fs 
-
 <br/>
-Portuguese script interpreter to javascript for educational purpose...
+Portuguese script interpreter to Javascript for educational purpose...
 <br/>
 Interpretador de scripts em português para Javascript com propositos educacionais...
 <br/>
