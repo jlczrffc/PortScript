@@ -40,7 +40,9 @@ default-> predefina
 <br/>
 break-> saia
 <br/>
-.forEach-> .paraCada (Array function)
+.forEach()-> .paraCada() (Array function)
+<br/>
+.substring()-> .fragmento() (String function)
 <br/>
 *All javascript reserved words, functions and properties are accepted...
 <br/>
