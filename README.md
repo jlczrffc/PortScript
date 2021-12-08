@@ -40,6 +40,12 @@ default-> predefina
 <br/>
 break-> saia
 <br/>
+eval-> avalie
+<br/>
+try-> tente
+<br/>
+catch-> pegue
+<br/>
 .forEach()-> .paraCada() (Array function)
 <br/>
 .substring()-> .fragmento() (String function)

@@ -68,6 +68,10 @@ arr=[1,2,3,4,5,6,7];
 
 arr.paraCada(r => imprima(r));
 
+avalie('console.log("printou!!! hahahahaha")');
+
+arr.length > 7 ? imprima('sim') : imprima('nao');
+
 
 
 

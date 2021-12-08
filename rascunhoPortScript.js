@@ -1,4 +1,4 @@
-	let archive = process.argv[2]
+let archive = process.argv[2]
 let option = process.argv[3]
 
 var fs = require('fs');
@@ -10,25 +10,73 @@ fs.readFile(archive, 'utf-8', function(err, data){
 	try{
 		commands = data.split(/\n/)
 		commands.forEach(function(command){
-			while(command.length > 0 ){
-				command = command.replace(/\b(para)\b/,'for') 
-				command = command.replace(/\b(permita)\b/,'let')
-				command = command.replace(/\b(variavel)\b/,'var')
-				command = command.replace(/\b(se)\b/,'if')
-				command = command.replace(/\b(constante)\b/,'const')
-				command = command.replace(/\b(imprima)\b/,'console.log')
-				command = command.replace(/\b(verdadeiro)\b/,'true')
-				command = command.replace(/\b(falso)\b/,'false')
-				command = command.replace(/\b(enquanto)\b/,'while')
-				command = command.replace(/\b(faca)\b/,'do')
-				command = command.replace(/\b(funcao)\b/,'function')
-				command = command.replace(/\b(troque)\b/,'switch')
-				command = command.replace(/\b(caso)\b/,'case')
-				command = command.replace(/\b(saia)\b/,'break')
-				command = command.replace(/\b(predefina)\b/,'default')
-				command = command.replace(/\b(paraCada)\b/,'forEach')
-				command = command.replace(/\b(retorne)\b/,'return')
-				command = command.replace(/\b(fragmento)\b/,'substring')
+			while(command.length > 0){
+				while(command.indexOf('paraCada') > -1){
+					command = command.replace(/\b(paraCada)\b/,'forEach')
+				}
+				while(command.indexOf('para') > -1){
+					command = command.replace(/\b(para)\b/,'for')
+				}
+				while(command.indexOf('permita') > -1){
+					command = command.replace(/\b(permita)\b/,'let')
+				}
+				while(command.indexOf('variavel') > -1){
+					command = command.replace(/\b(variavel)\b/,'var')
+				}
+				while(command.indexOf('se') > -1){
+					command = command.replace(/\b(se)\b/,'if')
+				}
+				while(command.indexOf('senao') > -1){
+					command = command.replace(/\b(senao)\b/,'else')
+				}
+				while(command.indexOf('constante') > -1){
+					command = command.replace(/\b(constante)\b/,'const')
+				}
+				while(command.indexOf('imprima') > -1){
+					command = command.replace(/\b(imprima)\b/,'console.log')
+				}
+				while(command.indexOf('verdadeiro') > -1){
+					command = command.replace(/\b(verdadeiro)\b/,'true')
+				}
+				while(command.indexOf('falso') > -1){
+					command = command.replace(/\b(falso)\b/,'false')
+				}
+				while(command.indexOf('enquanto') > -1){
+					command = command.replace(/\b(enquanto)\b/,'while')
+				}
+				while(command.indexOf('faca') > -1){
+					command = command.replace(/\b(faca)\b/,'do')
+				}
+				while(command.indexOf('funcao') > -1){
+					command = command.replace(/\b(funcao)\b/,'function')
+				}
+				while(command.indexOf('troque') > -1){
+					command = command.replace(/\b(troque)\b/,'switch')
+				}
+				while(command.indexOf('caso') > -1){
+					command = command.replace(/\b(caso)\b/,'case')
+				}
+				while(command.indexOf('saia') > -1){
+					command = command.replace(/\b(saia)\b/,'break')
+				}
+				while(command.indexOf('predefina') > -1){
+					command = command.replace(/\b(predefina)\b/,'default')
+				}
+				while(command.indexOf('retorne') > -1){
+					command = command.replace(/\b(retorne)\b/,'return')
+				}
+				while(command.indexOf('fragmento') > -1){
+					command = command.replace(/\b(fragmento)\b/,'substring')
+				}
+				while(command.indexOf('avalie') > -1){
+					command = command.replace(/\b(avalie)\b/,'eval ')
+				}
+				while(command.indexOf('tente') > -1){
+					command = command.replace(/\b(tente)\b/,'try')
+				}	
+				while(command.indexOf('pegue') > -1){
+					command = command.replace(/\b(pegue)\b/,'catch')				
+				}
 				result = result + command
 				command = '' 
 			}
