@@ -18,6 +18,8 @@ let-> permita
 <br/>
 if-> se
 <br/>
+else-> doContrario
+<br/>
 const -> constante
 <br/>
 true-> verdadeiro
@@ -46,9 +48,19 @@ try-> tente
 <br/>
 catch-> pegue
 <br/>
+await-> aguarde
+<br/>
+new-> nova
+<br/>
+async-> assincrona
+<br/>
+setTimeout-> definaTempoFinal (javascript function)
+<br/>
+Promise-> Promessa (Object)
+<br/>
 .forEach()-> .paraCada() (Array function)
 <br/>
-.substring()-> .fragmento() (String function)
+.substring()-> .fragmente() (String function)
 <br/>
 *All javascript reserved words, functions and properties are accepted...
 <br/>

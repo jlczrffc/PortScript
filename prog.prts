@@ -26,8 +26,10 @@ se(zzz === verdadeiro){
 };
 permita ccc = [1,2,3,4,5];
 imprima(ccc);
-if(hhh === 'teste'){
+if(hhh === 'tosto'){
 	imprima('funciona com variaveis!');
+}doContrario{
+  imprima('outro funcionou!!!');
 };
 funcao ttxx(mmm){
 	imprima(mmm);
@@ -37,7 +39,7 @@ funcao executa(yyy){
 	retorne 'kkkkk '+yyy;
 };
 imprima(executa('vai garoto2'));
-imprima('vai garoto'.fragmento(0,3)); 
+imprima('vai garoto'.fragmente(0,3)); 
 funcao numeroRegressivo(numero){
 	imprima(numero);
 	numero--;
@@ -72,9 +74,17 @@ avalie('console.log("printou!!! hahahahaha")');
 
 arr.length > 7 ? imprima('sim') : imprima('nao');
 
+funcao after2Seconds(xky) {
+  retorne nova Promessa(resolve => {
+    definaTempoFinal(() => {
+      resolve(xky);
+    }, 2000);
+  });
+};
 
+assincrona funcao f1() {
+  variavel xzz = aguarde after2Seconds(10);
+  imprima(xzz); 
+};
 
-
-
-
-
+f1();

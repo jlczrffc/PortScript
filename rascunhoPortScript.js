@@ -26,8 +26,13 @@ fs.readFile(archive, 'utf-8', function(err, data){
 				while(command.indexOf('se') > -1){
 					command = command.replace(/\b(se)\b/,'if')
 				}
-				while(command.indexOf('senao') > -1){
-					command = command.replace(/\b(senao)\b/,'else')
+				while(command.indexOf('doContrario') > -1){
+					command = command.replace(/\b(doContrario)\b/,'else')
+					console.log(command)
+				}
+				while(command.indexOf('definaTempoFinal') > -1){
+					command = command.replace(/\b(definaTempoFinal)\b/,'setTimeout')
+					console.log(command)
 				}
 				while(command.indexOf('constante') > -1){
 					command = command.replace(/\b(constante)\b/,'const')
@@ -65,17 +70,29 @@ fs.readFile(archive, 'utf-8', function(err, data){
 				while(command.indexOf('retorne') > -1){
 					command = command.replace(/\b(retorne)\b/,'return')
 				}
-				while(command.indexOf('fragmento') > -1){
-					command = command.replace(/\b(fragmento)\b/,'substring')
+				while(command.indexOf('fragmente') > -1){
+					command = command.replace(/\b(fragmente)\b/,'substring')
 				}
 				while(command.indexOf('avalie') > -1){
 					command = command.replace(/\b(avalie)\b/,'eval ')
 				}
 				while(command.indexOf('tente') > -1){
 					command = command.replace(/\b(tente)\b/,'try')
-				}	
+				}
 				while(command.indexOf('pegue') > -1){
 					command = command.replace(/\b(pegue)\b/,'catch')				
+				}
+				while(command.indexOf('aguarde') > -1){
+					command = command.replace(/\b(aguarde)\b/,'await ')				
+				}
+				while(command.indexOf('nova') > -1){
+					command = command.replace(/\b(nova)\b/,'new ')				
+				}
+				while(command.indexOf('assincrona') > -1){
+					command = command.replace(/\b(assincrona)\b/,'async ')				
+				}
+				while(command.indexOf('Promessa') > -1){
+					command = command.replace(/\b(Promessa)\b/,'Promise')				
 				}
 				result = result + command
 				command = '' 
