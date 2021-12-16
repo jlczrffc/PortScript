@@ -1,0 +1,12 @@
+limpe();
+funcao testeDePrimeira(xkz){
+    se (xkz < 1){
+        retorne;
+    }doContrario{
+        xkz--;
+        imprima(xkz);
+        testeDePrimeira(xkz);
+    };
+};
+
+testeDePrimeira(10);

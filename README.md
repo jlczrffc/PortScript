@@ -62,6 +62,10 @@ Promise-> Promessa (Object)
 <br/>
 .substring()-> .fragmente() (String function)
 <br/>
+console.log()-> imprima() 
+<br/>
+console.clear()-> limpe()
+<br/>
 *All javascript reserved words, functions and properties are accepted...
 <br/>
 *Todas as palavras reservadas, funções e propriedades em javcascript são aceitas...

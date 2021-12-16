@@ -74,6 +74,8 @@ avalie('console.log("printou!!! hahahahaha")');
 
 arr.length > 7 ? imprima('sim') : imprima('nao');
 
+imprima('ESPERE 2 SEGUNDOS!!!');
+
 funcao after2Seconds(xky) {
   retorne nova Promessa(resolve => {
     definaTempoFinal(() => {

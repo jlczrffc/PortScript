@@ -12,87 +12,88 @@ fs.readFile(archive, 'utf-8', function(err, data){
 		commands.forEach(function(command){
 			while(command.length > 0){
 				while(command.indexOf('paraCada') > -1){
-					command = command.replace(/\b(paraCada)\b/,'forEach')
+					command = command.replace(/paraCada/,'forEach')
 				}
 				while(command.indexOf('para') > -1){
-					command = command.replace(/\b(para)\b/,'for')
+					command = command.replace(/para/,'for')
 				}
 				while(command.indexOf('permita') > -1){
-					command = command.replace(/\b(permita)\b/,'let')
+					command = command.replace(/permita/,'let')
 				}
 				while(command.indexOf('variavel') > -1){
-					command = command.replace(/\b(variavel)\b/,'var')
+					command = command.replace(/variavel/,'var')
 				}
 				while(command.indexOf('se') > -1){
-					command = command.replace(/\b(se)\b/,'if')
+					command = command.replace(/se/,'if')
 				}
 				while(command.indexOf('doContrario') > -1){
-					command = command.replace(/\b(doContrario)\b/,'else')
-					console.log(command)
+					command = command.replace(/doContrario/,'else')
 				}
 				while(command.indexOf('definaTempoFinal') > -1){
-					command = command.replace(/\b(definaTempoFinal)\b/,'setTimeout')
-					console.log(command)
+					command = command.replace(/definaTempoFinal/,'setTimeout')
 				}
 				while(command.indexOf('constante') > -1){
-					command = command.replace(/\b(constante)\b/,'const')
+					command = command.replace(/constante/,'const')
 				}
 				while(command.indexOf('imprima') > -1){
-					command = command.replace(/\b(imprima)\b/,'console.log')
+					command = command.replace(/imprima/,'console.log')
+				}
+				while(command.indexOf('limpe') > -1){
+					command = command.replace(/limpe/,'console.clear')
 				}
 				while(command.indexOf('verdadeiro') > -1){
-					command = command.replace(/\b(verdadeiro)\b/,'true')
+					command = command.replace(/verdadeiro/,'true')
 				}
 				while(command.indexOf('falso') > -1){
-					command = command.replace(/\b(falso)\b/,'false')
+					command = command.replace(/falso/,'false')
 				}
 				while(command.indexOf('enquanto') > -1){
-					command = command.replace(/\b(enquanto)\b/,'while')
+					command = command.replace(/enquanto/,'while')
 				}
 				while(command.indexOf('faca') > -1){
-					command = command.replace(/\b(faca)\b/,'do')
+					command = command.replace(/faca/,'do')
 				}
 				while(command.indexOf('funcao') > -1){
-					command = command.replace(/\b(funcao)\b/,'function')
+					command = command.replace(/funcao/,'function')
 				}
 				while(command.indexOf('troque') > -1){
-					command = command.replace(/\b(troque)\b/,'switch')
+					command = command.replace(/troque/,'switch')
 				}
 				while(command.indexOf('caso') > -1){
-					command = command.replace(/\b(caso)\b/,'case')
+					command = command.replace(/caso/,'case')
 				}
 				while(command.indexOf('saia') > -1){
-					command = command.replace(/\b(saia)\b/,'break')
+					command = command.replace(/saia/,'break')
 				}
 				while(command.indexOf('predefina') > -1){
-					command = command.replace(/\b(predefina)\b/,'default')
+					command = command.replace(/predefina/,'default')
 				}
 				while(command.indexOf('retorne') > -1){
-					command = command.replace(/\b(retorne)\b/,'return')
+					command = command.replace(/retorne/,'return')
 				}
 				while(command.indexOf('fragmente') > -1){
-					command = command.replace(/\b(fragmente)\b/,'substring')
+					command = command.replace(/fragmente/,'substring')
 				}
 				while(command.indexOf('avalie') > -1){
-					command = command.replace(/\b(avalie)\b/,'eval ')
+					command = command.replace(/avalie/,'eval ')
 				}
 				while(command.indexOf('tente') > -1){
-					command = command.replace(/\b(tente)\b/,'try')
+					command = command.replace(/tente/,'try')
 				}
 				while(command.indexOf('pegue') > -1){
-					command = command.replace(/\b(pegue)\b/,'catch')				
+					command = command.replace(/pegue/,'catch')				
 				}
 				while(command.indexOf('aguarde') > -1){
-					command = command.replace(/\b(aguarde)\b/,'await ')				
+					command = command.replace(/aguarde/,'await ')				
 				}
 				while(command.indexOf('nova') > -1){
-					command = command.replace(/\b(nova)\b/,'new ')				
+					command = command.replace(/nova/,'new ')				
 				}
 				while(command.indexOf('assincrona') > -1){
-					command = command.replace(/\b(assincrona)\b/,'async ')				
+					command = command.replace(/assincrona/,'async ')				
 				}
 				while(command.indexOf('Promessa') > -1){
-					command = command.replace(/\b(Promessa)\b/,'Promise')				
+					command = command.replace(/Promessa/,'Promise')				
 				}
 				result = result + command
 				command = '' 
