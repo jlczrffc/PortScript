@@ -10,7 +10,6 @@ fs.readFile(archive, 'utf-8', function(err, data){
 	try{
 		commands = data.split(/\n/)
 		commands.forEach(function(command){
-			while(command.length > 0){
 				while(command.indexOf('paraCada') > -1){
 					command = command.replace(/paraCada/,'forEach')
 				}
@@ -95,43 +94,9 @@ fs.readFile(archive, 'utf-8', function(err, data){
 				while(command.indexOf('Promessa') > -1){
 					command = command.replace(/Promessa/,'Promise')				
 				}
-				result = result + command
-				command = '' 
-			}
+				result = result + command + '\n'
 		})
 		if (option === '-code'){ 
-			for(let l = 0; l < result.length; l++){
-				let letter = result.substring(l,l+1)
-				if(result.substring(l,l+3) === 'for'){
-					while(seek < 2){
-						if(result.substring(l,l+1) !== ')'){
-							l++
-						}else{
-							seek++
-						}
-					}
-					seek = 0
-				}
-				if(result.substring(l,l+3) === 'log'){
-					while(seek < 2){
-						if(result.substring(l,l+1) !== ')'){
-							l++
-						}else{
-							seek++
-						}
-					}
-					seek = 0
-				}
-				if (letter === '{'){
-					result=result.substring(0,l) + '{\n' +result.substring(l+1,result.length)
-				}
-				if (letter === ';'){
-					result=result.substring(0,l) + ';\n' +result.substring(l+1,result.length)
-				}
-				if (letter === '}'){
-					result=result.substring(0,l-1) + '\n' +result.substring(l,result.length)
-				}
-			}
 			console.log(result)
 		}
 		eval(result);
