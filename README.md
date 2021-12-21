@@ -109,3 +109,18 @@ Exemplo:
 <code>test~$ node rascunhoPortScript.js prog.prts -code</code>
 <br/>
 <br/>
+
+
+To save code in javascript format file use -save code option:
+<br/>
+Para salvar o codigo em arquivo formato javascript use a opção -save:
+<br/> 
+Use: node rascunhoPortScript.js [fileName.ext] -save [otherFilename]
+<br/>
+Example:
+<br/>
+Exemplo:
+<br/>
+<code>test~$ node rascunhoPortScript.js prog.prts -save myprog</code>
+<br/>
+<br/>
