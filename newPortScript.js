@@ -43,6 +43,7 @@ fs.readFile(archive, 'utf-8', function(err, data){
 		commands = data.split(/\n/)
 		commands.forEach(function(command){
             allComm.forEach(function(repl){
+                //command = command.replaceAll(repl[0],repl[1])
                 while(command.indexOf(repl[0]) > -1){
                     command = command.replace(repl[0],repl[1])
                 }
