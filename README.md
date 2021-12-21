@@ -83,13 +83,13 @@ To run your code:
 <br/>
 Para executar seu programa:  
 <br/>
-Use: node rascunhoPortScript.js [fileName.ext]
+Use: node newPortScript.js [fileName.ext]
 <br/>
 Example:
 <br/>
 Exemplo:
 <br/>
-<code>test~$ node rascunhoPortScript.js prog.prts</code>
+<code>test~$ node newPortScript.js prog.prts</code>
 <br/>
 *prog.prts is a PortScript test file...
 <br/>
@@ -100,27 +100,25 @@ To show interpreted code use -code option:
 <br/>
 Para exibir o codigo interpretado use a opção -code:
 <br/> 
-Use: node rascunhoPortScript.js [fileName.ext] -code
+Use: node newPortScript.js [fileName.ext] -code
 <br/>
 Example:
 <br/>
 Exemplo:
 <br/>
-<code>test~$ node rascunhoPortScript.js prog.prts -code</code>
+<code>test~$ node newPortScript.js prog.prts -code</code>
 <br/>
 <br/>
-
-
 To save code in javascript format file use -save option:
 <br/>
 Para salvar o codigo em arquivo formato javascript use a opção -save:
 <br/> 
-Use: node rascunhoPortScript.js [fileName.ext] -save [otherFilename]
+Use: node newPortScript.js [fileName.ext] -save [otherFilename]
 <br/>
 Example:
 <br/>
 Exemplo:
 <br/>
-<code>test~$ node rascunhoPortScript.js prog.prts -save myprog</code>
+<code>test~$ node newPortScript.js prog.prts -save myprog</code>
 <br/>
 <br/>
