@@ -111,7 +111,7 @@ Exemplo:
 <br/>
 
 
-To save code in javascript format file use -save code option:
+To save code in javascript format file use -save option:
 <br/>
 Para salvar o codigo em arquivo formato javascript use a opção -save:
 <br/> 
